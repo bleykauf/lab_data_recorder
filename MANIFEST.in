@@ -1,0 +1,4 @@
+include versioneer.py
+include lab_data_recorder/_version.py
+include README.md
+include LICENSE

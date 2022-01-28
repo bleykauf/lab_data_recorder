@@ -1,0 +1,19 @@
+name: ldr
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pytest
+  - tox
+  - black
+  - flake8
+  - flake8-docstrings
+  - pre-commit
+  - sphinx
+  - rope
+  - rpyc
+  - influxdb
+  - pip
+  - pip:
+      - click_log

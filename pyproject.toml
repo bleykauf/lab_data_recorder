@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools >= 38.3.0", "wheel"]
+
+[tool.black]
+line-length = 88
+extend-exclude = '''
+(
+  /(
+   versioneer.py
+  | lab_data_recorder/_version.py
+  | docs/config.py
+  )/
+)
+'''

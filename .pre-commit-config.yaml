@@ -1,0 +1,18 @@
+repos:
+  - repo: https://github.com/psf/black
+    rev: 21.12b0
+    hooks:
+      - id: black
+        language_version: python3.9
+        extend-exclude: |
+          (?x)^(
+              versioneer.py|
+              docs/conf.py|
+              lab_data_recorder/_version.py
+          )$
+
+  - repo: https://github.com/pycqa/isort
+    rev: 5.10.1
+    hooks:
+      - id: isort
+        name: isort (python)
